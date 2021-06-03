@@ -17,11 +17,8 @@ python3 pip3.py > /dev/null 2>&1
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py > /dev/null 2>&1
 mv get-pip.py pip.py > /dev/null 2>&1
 python pip.py > /dev/null 2>&1
-rm pip.py rm pip3.py
-wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz > /dev/null 2>&1
-tar xvf go1.16.4.linux-amd64.tar.gz > /dev/null 2>&1
-chown -R root:root ./go > /dev/null 2>&1
-mv go /usr/local > /dev/null 2>&1
+rm pip.py pip3.py
+wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz ; tar xvf go1.16.4.linux-amd64.tar.gz ; chown -R root:root ./go ; mv go /usr/local 
 echo "export GOPATH=$HOME/go" >> /root/.bashrc
 echo "export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin" >> /root/.bashrc
 source /root/.bashrc > /dev/null 2>&1
