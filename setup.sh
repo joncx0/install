@@ -11,6 +11,7 @@ apt install python -y
 apt install python3 -y 
 apt install make -y  
 apt install zip -y 
+apt install python3-pip -y 
 wget https://bootstrap.pypa.io/get-pip.py 
 mv get-pip.py pip3.py 
 python3 pip3.py 
